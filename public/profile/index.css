@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Gothic+A1:wght@300;400&family=Monoton&family=Montserrat+Alternates:wght@300;400&display=swap');
+.cont-write-post{
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #333;
+    padding: .5em 1em;
+}
+.navbar-nav .nav-link{
+   font-family:'Comfortaa', cursive;
+   font-size: 1.15rem;
+   /* margin-right: .5em; */
+}
+
+.card-subtitle{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.card-title{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+}
+.card-text{
+    font-family:'Comfortaa', cursive;
+}
+
+.navbar-brand{
+    font-family: 'Monoton', cursive;
+    font-size: 1.28rem;
+    color: blue;
+    /* margin-right: 1em; */
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active{
+    color: blue;
+}
+.cont-write-post h2{
+    margin-bottom: 1em;
+}
+.comment-container input,textarea{
+   width: 100%;
+ 
+}
+body{
+    position: relative;
+}
+.comment-container{
+    width: 90%;
+    margin: 0 auto;
+    display: none;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.comment-container::-webkit-scrollbar{
+    display: none;
+}
+.comment-card{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(131, 127, 127);
+}
+.user-who-comment{
+    font-size: .8rem;
+
+}
+.time-comment-made{
+    font-size: .6rem;
+    color: #444;
+    font-weight: 400;
+    float: right;
+}
+.comment-title-show{
+    font-size: .9rem;
+    font-weight: 500;
+}
+.comment-body-show{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.card-link{
+    cursor: pointer;
+    color: blue;
+    font-weight: 600;
+}
+.card-link:hover{
+    color: orange;
+}
+
+.date-title{
+    display: flex;
+    justify-content: space-between;
+}
+.user-box-icon{
+    display: flex;
+    flex-direction: row;
+}
+#user-icon-dropdown{
+    position: absolute;
+    z-index: 99;
+    background-color:  white;
+    text-align: left;
+    width: 300px;
+    right: 0;
+    border: 1px solid #c0c0c0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: none;
+  /* margin-top: 1em; */
+}
+
+#user-icon-dropdown li{
+   list-style: none;
+   padding: .5em .5em;
+   cursor: pointer;
+   width: 100%;
+
+}
+#user-icon-dropdown li:hover{
+    background-color: #939191;
+}
+
+
+ 

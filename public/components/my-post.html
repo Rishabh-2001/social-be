@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bootstrap.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <script defer src="./scripts/jquery.js"></script>
+    <script defer src="./scripts/popper.js"></script>
+    <script defer src="./scripts/bootstrap.js"></script>
+    <script defer src="https://kit.fontawesome.com/f6e286d0dd.js" crossorigin="anonymous"></script>
+    <script defer src="public/../scripts/write-post.js"></script>
+    <script  defer src="public/../scripts/social-common.js"></script>
+    <script  defer src="public/../scripts/my-post.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <!-- <nav class="navbar bg-dark" data-bs-theme="light"> -->
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/api/posts">Socio-Com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link "  href="/api/posts" data-component="all-articles">Home</a>
+                <a class="nav-link " href="/api/posts/write" >Write</a>
+                <a class="nav-link" href="#" data-component="my-post">My Posts</a>
+              </div>
+            </div>
+            <div class="user-box-icon" id="user-icon">
+              <span> <i class="fa fa-user" ></i> </span>
+              <span  id="currentuser" class="text-primary ml-auto px-2 font-weight-bold">Guest</span>
+            </div>
+          </div>
+        
+        
+        </nav>
+        <div id="user-icon-dropdown">
+          <ul style="padding-left: 0; margin-left: 0; ">
+            <li onclick="goToProfile()">Profile</li>
+            <li>Saved Items</li>
+            <li>Settings</li>
+            <li onclick="handleLogOut()">Log Out</li>
+          </ul>
+        </div>
+
+
+    <div class="container my-2">
+        <h1 class="h1 text-center">My Posts</h1>
+    
+        <div class="row" id="posts-box" >
+            
+        </div>
+        <div class="row" id="edit-post-box"></div>
+      
+       
+ 
+    
+    </div>
+    
+</body>
+</html>

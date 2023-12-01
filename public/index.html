@@ -1,0 +1,84 @@
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bootstrap.css">
+    <link rel="stylesheet" href="./style/index.css">
+   
+    <script defer src="./scripts/jquery.js"></script>
+    <script defer src="./scripts/popper.js"></script>
+    <script defer src="./scripts/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/f6e286d0dd.js" crossorigin="anonymous"></script>
+    <script  defer src="./scripts/social-common.js"></script>
+    <script defer src="./scripts/navbar.js"></script>
+    <script defer src="./scripts/all-posts.js"></script>
+    <script defer src="./scripts/write-post.js"></script>
+
+ 
+   
+    <title>social media</title>
+
+ </head>
+
+ <body>
+    
+   <nav class="navbar navbar-expand-lg bg-body-secondary">
+      <!-- <nav class="navbar bg-dark" data-bs-theme="light"> -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Socio-Com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link "  href="#" data-component="all-articles">Home</a>
+              <a class="nav-link " href="/api/posts/write" >Write</a>
+              <a class="nav-link" href="/api/posts/my-post" data-component="my-post">My Posts</a>
+            </div>
+          </div>
+        </div>
+<div class="user-box-icon">
+        <span> <i class="fa fa-user" id="user-icon"></i> </span>
+        <span  id="currentuser" class="text-primary ml-auto px-2 font-weight-bold">Guest</span>
+      </div>
+    
+      </nav>
+      <div id="user-icon-dropdown">
+        <ul style="padding-left: 0; margin-left: 0; ">
+          <li onclick="goToProfile()">Profile</li>
+          <li>Saved Items</li>
+          <li>Settings</li>
+          <li onclick="handleLogOut()">Log Out</li>
+        </ul>
+  </div>
+
+  
+         
+     <div class="container my-2">
+         <h1 class="h1 text-center">Recent Posts</h1>
+     
+         <div class="row" id="posts-box" >
+           
+            
+         </div>
+        
+         <!-- <script defer src="/public/scripts/social-common.js"></script> -->
+     
+     
+     </div>
+
+     <div id="content-box">
+          <h2>Home</h2>
+     </div>
+     <!-- <script>
+      loadArticles();
+   </script> -->
+
+
+ 
+ </body>
+ </html>
